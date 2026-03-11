@@ -15,7 +15,13 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        // example: send daily reminders or notification checks
+        // $schedule->call(function () {
+        //     // logic or dispatch job to generate notifications
+        // })->daily();
+
+        // you can also register custom commands and schedule them
+        // $schedule->command('notifications:send-expiring-agreements')->daily();
     }
 
     /**
